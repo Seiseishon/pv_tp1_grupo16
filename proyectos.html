@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explorador de Proyectos</title>
 </head>
 <body>
-    
+
+    <!-- Encabezado del sitio -->
+     <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="perfil.html">Perfil</a>    
+        </nav>
+        <h1>Gestión de Proyectos Educativos</h1>
+     </header>
+
+     <!-- Contenido principal -->
+
+    <main>
+        <h2>Explorador de Proyectos</h2>
+
+        <!-- Barra de Filtros -->
+        <aside>
+            <h3>Filtrar Proyectos</h3>
+            <form>   
+                <p>
+                    <label>Categoría:</label><br>
+                    <select name="" id="">
+                        <option value="">Todas</option>
+                        <option value="">Programación</option>
+                        <option value="">Code HTML</option>
+                        <option value="">Front End</option>
+                        <option value="">CSS: Guía</option>
+                        <option value="">JavaScript</option>
+                    </select> 
+                </p>
+
+                <p>
+                    <label for="">Año:</label><br>
+                    <select name="" id="">
+                        <option value="">Todos</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="">Estado:</label><br>
+                    <select name="" id="">
+                        <option value="">Todos</option>
+                        <option value="">En curso</option>
+                        <option value="">Finalizado</option>
+                    </select>
+                </p>
+            </form>
+        </aside>
+
+        <!-- Diseño de Listado de Proyectos -->
+
+        <section>
+            <h2>Listado de Proyectos</h2> 
+
+                <li>
+                    <h3>Proyecto 1: Titulo</h3>
+                    <img src="img/proyecto1.jpg" alt="Proyecto1" width="150"> 
+                    <p>Descripción breve del proyecto.</p>
+                    <p><strong>Catgoría:</strong> Programación</p>
+                    <a href="detalle.html">Ver detalle</a>
+                </li>
+
+                <li>
+                    <h3>Proyecto 2: Titulo</h3>
+                    <img src="img/proyecto2.jpg" alt="proyecto2">
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="detalle.html">Ver código</a>
+                    <p><strong>Categoría:</strong> Code HTML</p>
+                </li>
+
+                <li>
+                    <h3>Proyecto 3: Titulo</h3>
+                    <img src="img/proyecto3.jpg" alt="proyecto3">
+                    <p>Descripción breve del proyecto.</p>
+                    <p><strong>Categoría:</strong> Front End</p>
+                    <a href="detalle.html">Ver detalle</a>
+                </li>
+
+                <li>
+                    <h3>Proyecto 4: Titulo</h3>
+                    <img src="img/proyecto3.jpg" alt="proyecto4">
+                    <p>Descripción breve del proyecto.</p>
+                    <p><strong>Categoría:</strong> CSS: Guía</p>
+                    <a href="detalle.html">Ver detalle</a>
+                </li>
+
+                <li>
+                    <h3>Proyecto 5: Titulo</h3>
+                    <img src="img/proyecto3.jpg" alt="proyecto5">
+                    <p>Descripción breve del proyecto.</p>
+                    <p><strong>Categoría:</strong> Javascript</p>
+                    <a href="detalle.html">Ver detalle</a>
+                </li>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer>
+        <p>&copy; 2026 Gestión de Proyectos Educativos</p>
+    </footer>
+
 </body>
 </html>
