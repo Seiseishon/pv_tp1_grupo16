@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorador de Proyectos</title>
 </head>
+
 <body>
 
     <!-- Encabezado del sitio -->
     <header>
+    <header>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="proyectos.html">Proyectos</a>
-            <a href="perfil.html">Perfil</a>    
+            <a href="perfil.html">Perfil</a>
         </nav>
         <h1>Gestión de Proyectos Educativos</h1>
     </header>
+    </header>
 
     <!-- Contenido principal -->
+
     <main>
         <h2>Explorador de Proyectos</h2>
 
         <!-- Barra de Filtros -->
         <aside>
             <h3>Filtrar Proyectos</h3>
-            <form>   
-                <p>
-                    <label for="categoria">Categoría:</label><br>
-                    <select name="categoria" id="categoria">
-                        <option value="">Todas</option>
-                        <option value="programacion">Programación</option>
-                        <option value="html">Code HTML</option>
-                        <option value="frontend">Front End</option>
-                        <option value="css">CSS: Guía</option>
-                        <option value="javascript">JavaScript</option>
-                    </select> 
-                </p>
+            <form>
 
-                <p>
-                    <label for="anio">Año:</label><br>
-                    <select name="anio" id="anio">
-                        <option value="">Todos</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                    </select>
-                </p>
+                <label>Categoría:</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Todas</option>
+                    <option value="">Aplicaciones Web</option>
+                    <option value="">Juego</option>
+                </select>
+                <br>
+                <br>
 
-                <p>
-                    <label for="estado">Estado:</label><br>
-                    <select name="estado" id="estado">
-                        <option value="">Todos</option>
-                        <option value="en-curso">En curso</option>
-                        <option value="finalizado">Finalizado</option>
-                    </select>
-                </p>
+                <label for="">Año:</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Todos</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="">Estado:</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Todos</option>
+                    <option value="">En curso</option>
+                    <option value="">Finalizado</option>
+                </select>
+                <br>
+
             </form>
         </aside>
 
         <!-- Listado de Proyectos -->
         <section>
-            <h3>Listado de Proyectos</h3> 
+            <h2>Listado de Proyectos</h2>
 
-            <ul>
-                <li>
-                    <h4>Proyecto 1: Título</h4>
-                    <img src="img/proyecto1.jpg" alt="Vista del proyecto 1" width="150"> 
-                    <p>Descripción breve del proyecto.</p>
-                    <p><strong>Categoría:</strong> Programación</p>
-                    <a href="detalle.html">Ver detalle</a>
-                </li>
+            <li>
+                <h3>Proyecto 1: <u><em>Open Market</em></u></h3>
+                <img src="img/OpenMarket logo_4.png" alt="Imagen del logo del proyecto Open Market" width="150">
+                <p>
+                    Open Market es un proyecto de <strong>e-commerce</strong> 
+                    creado con <em>JavaScript, HTML y CSS</em>,
+                    enfocado en la visualización de productos y la interacción del usuario.
+                </p>
+                <p><strong>Categoría:</strong> Aplicaciones Web</p>
+                <a href="detalle.html">Ver detalle</a>
+            </li>
 
-                <li>
-                    <h4>Proyecto 2: Título</h4>
-                    <img src="img/proyecto2.jpg" alt="Vista del proyecto 2" width="150">
-                    <p>Descripción breve del proyecto.</p>
-                    <p><strong>Categoría:</strong> Code HTML</p>
-                    <a href="detalle.html">Ver detalle</a>
-                </li>
+            <li>
+                <h3>Proyecto 2: <u><em>Mercado Liebre</em></u></h3>
+                <img src="img/logo-mercado-liebre.svg" alt="Imagen del logo del proyecto Mercado Liebre" width="150">
+                <p>
+                    El proyecto Mercado Liebre es una simulación
+                    de un e-commerce inspirada en <strong>Mercado Libre</strong> creado con 
+                    <em>HTML</em>, centrada en la maquetación y organización del contenido.
+                </p>
+                <a href="detalle.html">Ver código</a>
+                <p><strong>Categoría:</strong> Aplicaciones Web</p>
+            </li>
 
-                <li>
-                    <h4>Proyecto 3: Título</h4>
-                    <img src="img/proyecto3.jpg" alt="Vista del proyecto 3" width="150">
-                    <p>Descripción breve del proyecto.</p>
-                    <p><strong>Categoría:</strong> Front End</p>
-                    <a href="detalle.html">Ver detalle</a>
-                </li>
+            <li>
+                <h3>Proyecto 3: <u><em>App de Películas</em></u></h3>
+                <img src="img/favicon.ico" alt="Imagen del logo del proyecto App de Peliculas">
+                <p>
+                    Aplicación web desarrollada con <em>React</em> que permite buscar y
+                    visualizar 
+                    información de películas mediante el consumo de APIs externas.
+                </p>
+                <p><strong>Categoría:</strong> Aplicaciones Web</p>
+                <a href="detalle.html">Ver detalle</a>
+            </li>
 
-                <li>
-                    <h4>Proyecto 4: Título</h4>
-                    <img src="img/proyecto4.jpg" alt="Vista del proyecto 4" width="150">
-                    <p>Descripción breve del proyecto.</p>
-                    <p><strong>Categoría:</strong> CSS: Guía</p>
-                    <a href="detalle.html">Ver detalle</a>
-                </li>
+            <li>
+                <h3>Proyecto 4: <u><em>Aplicación de Clima</em></u></h3>
+                <img src="img/clima.ico" alt="Imagen del logo del proyecto Aplicación de clima">
+                <p>
+                    Aplicación web desarrollada con <em>React</em> que permite buscar y 
+                    visualizar el clima de distintas ciudades mediante el consumo de APIs externas.
+                </p>
+                <p><strong>Categoría:</strong> Aplicaciones Web</p>
+                <a href="detalle.html">Ver detalle</a>
+            </li>
 
-                <li>
-                    <h4>Proyecto 5: Título</h4>
-                    <img src="img/proyecto5.jpg" alt="Vista del proyecto 5" width="150">
-                    <p>Descripción breve del proyecto.</p>
-                    <p><strong>Categoría:</strong> JavaScript</p>
-                    <a href="detalle.html">Ver detalle</a>
-                </li>
-            </ul>
+            <li>
+                <h3>Proyecto 5: <u><em>Espejo Mágico</em></u></h3>
+                <img src="img/icons8-espejo-96.ico" alt="Imagen de un espejo">
+                <p>
+                    Espejo Mágico es un juego de consola desarrollado en <em>C++</em>, 
+                    donde el jugador debe adivinar palabras generadas aleatoriamente para ganar la partida.  
+                </p>
+                <p><strong>Categoría:</strong> Juego</p>
+                <a href="detalle.html">Ver detalle</a>
+            </li>
 
         </section>
     </main>
@@ -113,4 +135,5 @@
     </footer>
 
 </body>
+
 </html>
