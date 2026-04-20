@@ -1,12 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap); /*Importar la fuente Roboto a css*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
+/*Importar la fuente Roboto a css*/
 :root {
-    --fuente: 'Roboto'; /*variable de fuente*/ /*se usa con var(--fuente), por ejemplo font-family: var(--fuente);*/
+    --fuente: 'Roboto';
+    /*variable de fuente*/
+    /*se usa con var(--fuente), por ejemplo font-family: var(--fuente);*/
+    --text-size: 1.2rem;
+    /*variable de tamaño de texto*/
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--fuente);
 }
+
 main {
     max-width: 800px;
     margin: 30px auto;
@@ -50,7 +59,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-main section {
+main .integrantes {
     background-color: #f8f9fa;
     padding: 25px;
     border-radius: 8px;
@@ -131,3 +140,73 @@ img {
     object-fit: cover;
 }
 
+
+/*Proyectos.html*/
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #8A2BE2;
+}
+
+.menu {
+    border: none;
+    background-color: #8A2BE2;
+    padding: 5px 0px 0px 0px;
+}
+
+nav {
+    display: none;
+}
+
+/* main */
+
+/* section */
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-size);
+}
+
+.proyecto {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 5px solid #8A2BE2;
+    padding: 10px 10px;
+    margin: 15px 0px 0px 0px;
+}
+
+.titulo-proyecto {
+    margin: 10px 0px;
+}
+
+
+/* Navegación en desktop (ancho mínimo 769 px)  */
+
+@media (min-width: 769px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        margin: 5px 0px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
