@@ -272,22 +272,50 @@ main img {
     }
 
     nav {
-        display: flex;
-        justify-content: space-around;
-    }
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    right: 50px; 
+    display: flex;
+    justify-content: flex-end; 
+    gap: 30px;
+    padding-right: 20px;
+}
 
-    nav a {
-        margin: 5px 0px;
-        color: #000;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease;
-    }
+nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative; 
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
 
-    nav a:hover {
-        color: #fff;
-        text-decoration: underline;
-    }
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.5s ease; 
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:hover::after {
+    width: 100%; 
+}
+
+nav a:active {
+    transform: scale(0.95);
+}
 }
 
 nav a:active, .proyecto a:active {
@@ -301,8 +329,8 @@ nav a:focus, .proyecto a:focus, select:focus {
 
 aside form {
     display: flex;
-    flex-direction: column; /* Alinea etiquetas y selects uno abajo del otro */
-    gap: 12px;              /* Espacio uniforme entre cada campo */
+    flex-direction: column; 
+    gap: 12px;             
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -321,6 +349,6 @@ aside select {
 }
 
 aside select:focus {
-    border-color: #8A2BE2; /* El violeta de tu proyecto */
+    border-color: #8A2BE2;
     outline: none;
 }
