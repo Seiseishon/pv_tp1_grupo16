@@ -148,18 +148,59 @@ img {
 header {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    background-color: #8A2BE2;
-}
-
-.menu {
-    border: none;
-    background-color: #8A2BE2;
-    padding: 5px 0px 0px 0px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
 }
 
 nav {
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+header h1 {
+    margin: 20px 0 15px 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 25px;
+    border-radius: 100px;
+    width: fit-content;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* main */
