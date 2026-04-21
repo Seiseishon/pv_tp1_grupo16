@@ -148,7 +148,7 @@ img {
 header {
     display: flex;
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 80px 20px 60px 20px;
     background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
     color: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -159,7 +159,7 @@ header {
 nav {
     width: 100%;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -182,11 +182,15 @@ nav a:hover {
 }
 
 header h1 {
-    margin: 20px 0 15px 0;
-    font-size: 3.5rem;
+    margin: 10px 0 15px 0;
+    font-size: 3rem;
     font-weight: 900;
     text-align: center;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    text-align: center;
 }
 
 .proyecto-info {
@@ -203,6 +207,23 @@ header h1 {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+main img {
+    display: block;
+    max-width: 100%;
+    width: 280px;
+    margin: 0 auto 50px auto;
+}
+
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    nav { gap: 20px; top: 20px; }
+    .proyecto-info {
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 15px;
+    }
+}
+
 /* main */
 
 /* section */
@@ -210,19 +231,36 @@ header h1 {
 .proyectos {
     display: flex;
     flex-direction: column;
-    font-size: var(--text-size);
+    gap: 20px;
 }
 
 .proyecto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
     background-color: #f8f9fa;
     border-radius: 8px;
     border-left: 5px solid #8A2BE2;
-    padding: 10px 10px;
-    margin: 15px 0px 0px 0px;
+    margin: 15px 0;
 }
 
-.titulo-proyecto {
-    margin: 10px 0px;
+.proyecto a {
+    align-self: center;
+    background-color: #8A2BE2;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.proyecto a:hover {
+    background-color: #4B0082;
+    transform: translateY(-2px);
 }
 
 
@@ -250,4 +288,39 @@ header h1 {
         color: #fff;
         text-decoration: underline;
     }
+}
+
+nav a:active, .proyecto a:active {
+    transform: scale(0.95); 
+}
+
+nav a:focus, .proyecto a:focus, select:focus {
+    outline: 2px solid #4B0082;
+    outline-offset: 3px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column; /* Alinea etiquetas y selects uno abajo del otro */
+    gap: 12px;              /* Espacio uniforme entre cada campo */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+aside select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+aside select:focus {
+    border-color: #8A2BE2; /* El violeta de tu proyecto */
+    outline: none;
 }
