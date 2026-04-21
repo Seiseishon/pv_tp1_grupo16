@@ -18,15 +18,19 @@
 }
 
 main {
-    max-width: 900px;
-    margin: -50px auto 50px auto;
-    padding: 50px;
+    max-width: 1200px; 
+    width: 95%;
+    margin: -60px auto 50px auto;
+    padding: 40px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    
+    border-top: 8px solid #8A2BE2; 
+    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;
-    border-top: 6px solid #8A2BE2;
+    box-sizing: border-box;
 }
 
 main p {
@@ -292,23 +296,37 @@ main img {
 
 /* section */
 
-.proyectos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .proyecto {
+    grid-column: span 2; 
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 25px;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 5px solid #8A2BE2;
-    margin: 15px 0;
+    border: 1px solid #eef0f2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    min-height: 420px;
+    transition: all 0.3s ease;
+}
+
+.proyecto:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+
+.proyecto:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+
+.proyecto img {
+    max-width: 140px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .proyecto a {
@@ -396,31 +414,33 @@ nav a:focus, .proyecto a:focus, select:focus {
     outline: 2px solid #4B0082;
     outline-offset: 3px;
 }
+/* Filtro de proyecto */
+aside {
+    width: 100%;
+    margin-bottom: 40px;
+}
 
 aside form {
     display: flex;
-    flex-direction: column; 
-    gap: 12px;             
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+}
+
+.filtros {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 aside select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    background-color: white;
-    cursor: pointer;
-    transition: border-color 0.3s;
-}
-
-aside select:focus {
-    border-color: #8A2BE2;
-    outline: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: inherit;
 }
 
 body {
