@@ -259,6 +259,7 @@ header h1 {
 
 .header-content {
     text-align: center;
+    padding-top: 80px;
 }
 
 .proyecto-info {
@@ -445,4 +446,191 @@ aside select {
 
 body {
     background-color: #E7E9EB; /* Boby gris para el contenido main */
+}
+
+/* ============================================
+   ESTILOS PARA INDEX.HTML
+   ============================================ */
+
+/* --- Título del header (aplica a todas las páginas) --- */
+#titulo-h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 4px dashed rgba(255, 255, 255, 0.4);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Botón "Ver Proyectos" en el header --- */
+.btn-header {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 40px;
+    background-color: #8A2BE2;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color: #ffffff;
+    color: #8A2BE2;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Títulos de sección dentro del main --- */
+.seccion-titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #8A2BE2;
+    display: inline-block;
+}
+
+/* --- Sección estadísticas --- */
+.seccion-estadisticas {
+    margin-bottom: 40px;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-stat {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-top: 4px solid #8A2BE2;
+    border-radius: 12px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.15);
+}
+
+.stat-icono {
+    font-size: 2rem;
+}
+
+.stat-numero {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #8A2BE2;
+    line-height: 1;
+}
+
+.stat-etiqueta {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- Sección novedades --- */
+.seccion-novedades {
+    margin-bottom: 20px;
+}
+
+.lista-novedades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.novedad-item {
+    background-color: #f8f4ff;
+    border-left: 5px solid #8A2BE2;
+    padding: 14px 20px;
+    border-radius: 0 8px 8px 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.novedad-item:hover {
+    background-color: #efe8ff;
+}
+
+/* --- Responsive para estadísticas --- */
+@media (max-width: 768px) {
+    .tarjetas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #titulo-h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- Sección sobre el proyecto --- */
+.seccion-sobre {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f8f4ff;
+    border-radius: 12px;
+    border-left: 5px solid #8A2BE2;
+}
+
+.sobre-descripcion {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.sobre-datos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sobre-dato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-icono {
+    font-size: 1.4rem;
+}
+
+.sobre-texto {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* --- Responsive nuevas secciones --- */
+@media (max-width: 768px) {
+    .sobre-datos {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

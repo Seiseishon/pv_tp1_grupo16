@@ -10,21 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <style>
-        #titulo-h1 {
-            color: #ffffff;
-            font-size: 3.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            display: inline-block;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-    
-            border-bottom: 4px dashed rgba(255, 255, 255, 0.4); 
-    
-            text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-        </style>
 </head>
 
 <body>
@@ -35,37 +20,78 @@
             <a href="perfil.html">Perfil</a>
         </nav>
         <div class="header-content">
-            <h1 id="titulo-h1">Gestion de Proyectos y Trabajos UNJUPROYECT</h1>
+            <h1 id="titulo-h1">Gestión de Proyectos y Trabajos UNJUPROYECT</h1>
             <div class="proyecto-info">
                 <p>Optimice su flujo de trabajo con nuestra plataforma centralizada de seguimiento académico.</p>
                 <p>Manejado por el Grupo 16 • Cátedra de APU.</p>
             </div>
+            
         </div>
     </header>
+
     <main>
 
-        <section>
-            <h2>Estadiscticas</h2>
-            <article>Tareas pendientes: 5</article>
-            <article>Novedades nuevas: 3</article>
-            <article>Proyectos Terminados: 2</article>
-
+        <section class="seccion-sobre">
+            <h2 class="seccion-titulo">¿Qué es UNJUPROYECT?</h2>
+            <p class="sobre-descripcion">
+                UNJUPROYECT es una plataforma de gestión académica desarrollada por el <strong>Grupo 16</strong>
+                de la Cátedra de APU. Su objetivo es centralizar el seguimiento de proyectos, facilitar
+                la organización del equipo y mantener a todos los integrantes informados del estado actual
+                de cada trabajo.
+            </p>
+            <div class="sobre-datos">
+                <div class="sobre-dato">
+                    <span class="sobre-icono">🎓</span>
+                    <span class="sobre-texto">Cátedra de APU — 2026</span>
+                </div>
+                <div class="sobre-dato">
+                    <span class="sobre-icono">👥</span>
+                    <span class="sobre-texto">Grupo 16 — 5 integrantes</span>
+                </div>
+                <div class="sobre-dato">
+                    <span class="sobre-icono">🏫</span>
+                    <span class="sobre-texto">Universidad Nacional de Jujuy</span>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <br><br>
-            <h2>Novedades</h2>
-            <ul>
-                <li style="font-weight: bold; color: #8A2BE2;">Se finalizaron los proyectos pendientes</li>
-                <li style="font-weight: bold; color: #8A2BE2;">Noel finalizo el apartado "Mi perfil"</li>
-                <li style="font-weight: bold; color: #8A2BE2;">Se realizaron cambion en el archivo "detalles" con el fin de tener un mejor entorno</li>
+        <!-- Sección de estadísticas -->
+        <section class="seccion-estadisticas">
+            <h2 class="seccion-titulo">Estadísticas</h2>
+            <div class="tarjetas-grid">
+                <article class="tarjeta-stat">
+                    <span class="stat-icono">📋</span>
+                    <span class="stat-numero">5</span>
+                    <span class="stat-etiqueta">Tareas Pendientes</span>
+                </article>
+                <article class="tarjeta-stat">
+                    <span class="stat-icono">🔔</span>
+                    <span class="stat-numero">3</span>
+                    <span class="stat-etiqueta">Novedades Nuevas</span>
+                </article>
+                <article class="tarjeta-stat">
+                    <span class="stat-icono">✅</span>
+                    <span class="stat-numero">2</span>
+                    <span class="stat-etiqueta">Proyectos Terminados</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de novedades -->
+        <section class="seccion-novedades">
+            <h2 class="seccion-titulo">Novedades</h2>
+            <ul class="lista-novedades">
+                <li class="novedad-item">Se finalizaron los proyectos pendientes</li>
+                <li class="novedad-item">Noel finalizó el apartado "Mi perfil"</li>
+                <li class="novedad-item">Se realizaron cambios en el archivo "detalles" con el fin de tener un mejor entorno</li>
             </ul>
-
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br>
+        <!-- Sección sobre el proyecto -->
+        
 
     </main>
+
     <footer>
         <p>&copy; 2026 Gestión de Proyectos Educativos</p>
     </footer>
